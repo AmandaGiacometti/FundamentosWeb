@@ -9,56 +9,63 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li> <a href="index.html">Voltar à página inicial</a></li>
-        
-            <li><a href="https://github.com/ManGiaco" target="_blank">Meu Github</a></li>
-        </ul>
-    </nav>
+
+    <ul id="menu">
+        <li> 
+            <a href="index.html">Home</a>
+        </li>
+        <li> 
+            <a href="internas.html">Plantas internas</a>
+        </li>
+        <li> 
+            <a href="externas.html">Plantas externas</a>
+        </li>
+        <li> 
+            <a href="contato.html">Contato</a>
+        </li>
+    </ul>
 
     <hr>
 
     <main>
        
-        <section>
-            <p>Entre em contato comigo!</p>
-            <form>
-                <div>
+        <section id="contato">
+            <h2>Quer falar comigo sobre alguma coisa?</h2>
+            <form id="formulario">
+                <div class="form">
                     <label for="nome">Seu nome: </label> <br>
                     <input type="text" id="nome">
                 </div>
-                <div> 
+                <div class="form">
                     <label for="email">Seu e-mail: </label> <br>
                     <input type="email" id="email">
-                </div>   
-                <div>  
+                </div>
+                <div class="form">
                     <label for="assunto">Sua mensagem: </label> <br>
                     <textarea name="assunto" id="assunto" cols="50" rows="10"></textarea>
-                </div>  
+                </div>
                 <button>Enviar!</button>
             </form>
         </section>
 
         <hr>
 
-        <section>
-            <h3>Endereço de um restaurante que amo:</h3>
-            <div>
-                <span>Rua da Glória, 131</span>
-                <span>Liberdade - São Paulo - SP</span>
-            </div>     
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.576665090373!2d-46.6342374!3d-23.5542829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29771c4a28f54eba!2sHot%20pot%20Restaurant!5e0!3m2!1spt-BR!2sbr!4v1663899500375!5m2!1spt-BR!2sbr" 
-                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade"></iframe>           
+        <section id="endereco">
+            <div id="enderecotexto">
+                <h2>Endereço de uma loja de plantas enorme que tem tudo:</h2>
+                <h3>Shopping Garden Tatuapé</h3>
+                <p>Avenida Salim Farah Maluf, 2211</p>
+                <p>Tatuapé - São Paulo - SP</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.193333480287!2d-46.5783958!3d-23.5487422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb2d62bcbc13bbaa!2sShopping%20Garden%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1664085789913!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
         </section>
 
     </main>
-
+    
     <hr>
-
-    <footer>
-        <p>Feito por: Amanda Giacometti</p>
+    
+    <footer id="rodape">
+        <p>Site feito por: Amanda Giacometti</p>
     </footer>
 
 </body>

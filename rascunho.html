@@ -1,0 +1,47 @@
+/*
+### display: Specifies the type of box used for an HTML element
+
+### flex-direction: Specifies the direction of the flexible items inside a flex container
+column; = fica uma coluna de boxes
+column-reverse; = fica uma coluna das boxes, só que em ordem invertida
+row; = fica uma fila de boxes
+row-reverse; = fica uma fila de boxes, só que em ordem invertida
+
+### flex-wrap: Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line
+wrap; = Se você tiver que diminuir o tamanho da página, as boxes vão quebrar de linha e descer pra linha de baixo, de maneira dinâmica.
+nowrap; = Se você tiver que diminuir o tamanho da página, as boxes vão se espremer cada vez mais, talvez até deixarem de ser visualizadas.
+wrap-reverse; = Se você tiver que diminuir o tamanho da página, as boxes vão quebrar de linha e descer pra linha de baixo, só que numa ordem muito louca que eu não sei se entendi kk
+
+### flex-flow: A shorthand property for flex-direction and flex-wrap
+row wrap; = é só uma mistura de dois comandos: flex direction row + flex wrap
+
+### justify-content: Horizontally aligns the flex items when the items do not use all available space on the main-axis
+center; = alinha as boxes no centro do container
+flex-start; = alinha as boxes no começo do container
+flex-end; = alinha as boxes no fim do container
+space-around; = alinha as boxes deixando espaço entre elas e entre as margens do container também
+space-between; = alinha as boxes deixando espaço só entre elas (sem margem com o container em si)
+
+### align-items: Vertically aligns the flex items when the items do not use all available space on the cross-axis
+center; = alinha as boxes com a linha HORIZONTAL do meio do container
+flex-start; = alinha as boxes no teto do container
+flex-end; = alinha as boxes no chão do container
+stretch; = estica as boxes (verticalmente, deixando elas mais altas) pra caber no container do chão ao teto
+baseline; = rapaiz, esse eu não entendi não kk
+
+### align-content: Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines
+flex-start; = alinha as boxes no começo do container, mas de uma forma geral
+flex-end; = alinha as boxes mais no fundo do container, mas de uma forma mais geral
+center; = alinha as boxes no meio (horizontal) do container, de uma forma geral
+stretch; = estica as boxes verticalmente, pra elas preencherem o container de maneira geral
+space-around; = deixa uma margem entre as boxes (mas mais horizontalmente, entre as "linhas")
+space-between = deixa uma margem horizontal só entre as boxes
+
+### PARA CENTRALIZAR 100% UMA BOX:
+Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered!
+  justify-content: center;
+  align-items: center; 
+
+
+
+*/

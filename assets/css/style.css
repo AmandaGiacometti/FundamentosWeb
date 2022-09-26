@@ -1,11 +1,17 @@
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /* ESTILOS GERAIS QUE VÃO EM TODAS AS PÁGINAS*/
 /* Menu superior: */
-#menu {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-items: center;
+#menu li {
+    display: inline;
+    padding: 30px;
+}
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#menu li a:hover {
+    color: green;
 }
 
 /*????????????????????????????*/
@@ -19,6 +25,12 @@
     justify-content: center;
     align-items: flex-end;
 }
+#footerredes a img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /* ESTILOS DO INDEX: */
 
@@ -35,12 +47,24 @@
     justify-content: center;
     align-items: center;
 }
+#intro article {
+    padding: 160px;
+    text-align: justify;
+}
+#intro img {
+    padding: 50px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
 
 #video {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 /*?????????????????????????????????????????????????????????????????????????????????????????????????*/

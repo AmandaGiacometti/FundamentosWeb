@@ -1,31 +1,65 @@
 /*------------------------------------------------------------------------------------------------------------------------------*/
-/* ESTILOS GERAIS QUE VÃO EM TODAS AS PÁGINAS*/
-/* Menu superior: */
-#menu li {
+/* ESTILOS GERAIS */
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    background-color:#B76E79;
+  }
+p {
+    color: #fff;
+    font-family: 'Indie Flower';
+    font-size: 20px;
+    text-align: justify;
+    text-align-last: center;
+    letter-spacing: 1px;
+    line-height: 1.35;
+    word-spacing: 3px;
+}
+h4 {
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-family: Verdana;
+    font-size: 20px;
+}
+hr {
+    width: 80vw;
+    margin: 1.5rem auto;
+    height: 5px;
+    border: none;
+    background-color: black;
+  }
+
+/*----------------------*/
+/*    Menu superior:    */
+/*----------------------*/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
     display: inline;
     padding: 30px;
 }
-#menu li a {
+.menu li a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
-#menu li a:hover {
+.menu li a:hover {
     color: green;
 }
 
-/*????????????????????????????*/
-/* Tem como estilizar a <hr>? */
-/*????????????????????????????*/
-
-/* Footer: */
-#rodape {
+/*-------------------------*/
+/*         Footer:         */
+/*-------------------------*/
+footer {
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: flex-end;
 }
-#footerredes a img {
+.iconefooter {
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -33,140 +67,29 @@
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /* ESTILOS DO INDEX: */
-
-#titulozao {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#intro {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-}
-#intro article {
-    padding: 160px;
-    text-align: justify;
-}
-#intro img {
-    padding: 50px;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-}
-
-
-#video {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-/*?????????????????????????????????????????????????????????????????????????????????????????????????*/
-/*ELE TÁ RECONHECENDO QUE O VIDEOTEXTO E O VIDEOARTICLE SÃO CONTAINERS (UNS DENTRO DOS OUTROS), MAS PQ ELE NÃO TÁ ALINHANDO OS TEXTOS NO MEIO???*/
-/*?????????????????????????????????????????????????????????????????????????????????????????????????*/
-
-#videotexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-}
-#videoarticle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+h1 {
+    color: rgb(0, 3, 168);
+    text-align: center;
+    font-family: Verdana;
+    font-size: 40px;
+    text-shadow: 3px 3px 15px rgb(117, 102, 253);
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /* ESTILOS DO INTERNAS E EXTERNAS */
-
-#manchete{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: center;
+h2 {
+    color: rgb(234, 250, 8);
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
+}
+h3 {
+    color: rgb(63, 126, 0);
+    text-align: center;
+    font-family: Verdana;
+    font-size: 30px;
 }
 
-/*?????????????????????????????????????????????????????????????????????????????????????????????????*/
-/*ELE TÁ RECONHECENDO QUE O MANCHETETEXTO É UM CONTAINER (UNS DENTRO DOS OUTROS), MAS PQ ELE NÃO TÁ ALINHANDO OS TEXTOS NO MEIO???*/
-/*?????????????????????????????????????????????????????????????????????????????????????????????????*/
 
-#manchetetexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.asplantas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.planta {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.plantatexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------*/
-/* ESTILOS DO CONTATO */
-
-#contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-}
-
-#formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-/*????????????????????????????????????????????*/
-/* NÃO TÔ CONSEGUINDO ALINHAR ESSE FORMULÁRIO */
-/*????????????????????????????????????????????*/
-
-
-#endereco {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
-    align-content: center;
-}
-
-#enderecotexto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
 
 

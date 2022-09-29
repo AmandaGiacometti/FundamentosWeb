@@ -31,32 +31,55 @@
     <main id="contatao">
        
             <section id="contato">
-                <h4>Quer falar comigo sobre alguma coisa?</h4>
-                <form>
-                    <div>
+
+                <h4>Quer falar comigo?</h4>
+
+                <form id="form">
+
+                    <div class="form2">
                         <label for="nome">Seu nome: </label> <br>
-                        <input type="text" id="nome">
+                        <input class="caixinha" type="text" name="nome" onkeyup="validaNome()" required>
+                        <div id="txtNome"> </div>
                     </div>
-                    <div>
+                   
+                    <div class="form2">
                         <label for="email">Seu e-mail: </label> <br>
-                        <input type="email" id="email">
+                        <input class="caixinha" name="email" type="text" onkeyup="validaEmail2()" required>
+                        <div id="txtEmail"></div>
                     </div>
-                    <div>
+                        
+                    <div class="form2">
                         <label for="assunto">Sua mensagem: </label> <br>
-                        <textarea name="assunto" id="assunto" cols="50" rows="10"></textarea>
+                        <textarea class="caixinha2" id="mensagem" name="mensagem" rows="10" onkeyup="validaMensagem()"></textarea>
+                        <div id="txtMsg"></div>
                     </div>
-                    <button id="botao">Enviar!</button>
+
+                    <button id="botaozinho" type="submit" onclick="enviarForm()">Enviar!</button>
+
                 </form>
+
+                <div id="idicones">
+                    <a href="https://www.linkedin.com/in/mangiaco/" target="_blank">
+                        <img class="iconescontato" src="assets/img/linkedinwhite.png" alt="Imagem de um ícone do Linkedin">
+                    </a>
+                    <a href="https://github.com/ManGiaco" target="_blank">
+                        <img class="iconescontato" src="assets/img/githubwhite.jpeg" alt="Imagem de um ícone do Github">
+                    </a>
+                    <a href="mailto:amandagiacomettipedrosa@gmail.com" target="_blank">
+                        <img class="iconescontato" src="assets/img/gmailwhite.png" alt="Imagem de um ícone de email">
+                    </a>
+                </div>
             </section>
 
             <section id="endereco">
                 <div>
-                    <h4>Endereço de uma loja de plantas enorme que tem tudo:</h4>
-                    <p>Shopping Garden Tatuapé</p>
-                    <p>Avenida Salim Farah Maluf, 2211</p>
-                    <p>Tatuapé - São Paulo - SP</p>
+                    <h4>Quer conhecer meu jardim?</h4>
+                    <p>Estrada do Una, 6939</p>
+                    <p>Barra do Una - Peruíbe - SP</p>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14630.193333480287!2d-46.5783958!3d-23.5487422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfb2d62bcbc13bbaa!2sShopping%20Garden%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1664085789913!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14529.259575236285!2d-47.0719055!3d-24.4398579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc62f2c9ce3e7bbf3!2sBar%20Do%20Walter!5e0!3m2!1spt-BR!2sbr!4v1664387519871!5m2!1spt-BR!2sbr" 
+                class="mapa" id="mapa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                onmouseover="mapaZoom()" onmouseout="mapaNormal()" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
 
     </main>
@@ -64,21 +87,10 @@
     <hr>
     
     <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/mangiaco/" target="_blank">
-                <img class="iconefooter" src="assets/img/linkedinblack.png" alt="Imagem de um ícone do Linkedin.">
-            </a>
-            <a href="https://github.com/ManGiaco" target="_blank">
-                <img class="iconefooter" src="assets/img/githubblack.png" alt="Imagem de um ícone do Github.">
-            </a>
-            <a href="mailto:amandagiacomettipedrosa@gmail.com" target="_blank">
-                <img class="iconefooter" src="assets/img/gmailblack.png" alt="Imagem de um ícone do Gmail.">
-            </a>
-        </div>
         <p>Site feito por: Amanda Giacometti &copy;</p>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 </html>

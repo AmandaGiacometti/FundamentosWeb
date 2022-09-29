@@ -33,6 +33,7 @@ hr {
 /*----------------------*/
 /*    Menu superior:    */
 /*----------------------*/
+
 .menu {
     list-style-type: none;
     margin: 0;
@@ -58,26 +59,12 @@ hr {
 /*-------------------------*/
 /*         Footer:         */
 /*-------------------------*/
+
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-footer p {
-    margin-left: 15px;
-}
-footer div {
-    margin-right: 15px;
-}
-.iconefooter {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.iconefooter:hover {
-    opacity: 0.5;
 }
 
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -147,6 +134,7 @@ h1 {
 /*--------------------------*/
 /*          Vídeo:          */
 /*--------------------------*/
+
 #video {
     display: flex;
     flex-flow: row;
@@ -178,6 +166,7 @@ h1 {
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*                                             ESTILOS DO INTERNAS E EXTERNAS                                                   */
 /*------------------------------------------------------------------------------------------------------------------------------*/
+
 h2 {
     color: #fff;
     text-align: center;
@@ -186,15 +175,16 @@ h2 {
     text-shadow: 7px 7px 15px #69353d, 7px 7px 15px #69353d;
 }
 h3 {
-    color: rgb(63, 126, 0);
+    color: #fff;
     text-align: center;
-    font-family: Verdana;
+    font-family: 'Indie Flower';
     font-size: 30px;
 }
 
 /*---------------------------*/
 /*          Manchete:        */
 /*---------------------------*/
+
 .manchete{
     display: flex;
     flex-flow: row;
@@ -225,30 +215,59 @@ h3 {
 /*---------------------------*/
 /*        Cada planta:       */
 /*---------------------------*/
+
 .listaplantas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 50px;
 }
 .planta {
     display: flex;
     flex-flow: row;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .plantatexto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    margin-right: 30px;
 }
-.planta img {
+.plantaimg {
     width: 400px;
     height: 400px;
     border-radius: 50px;
+    margin-left: 30px;
 }
-
+.plantainv {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.plantatextoinv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 30px;
+}
+.plantaimginv {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
 /*------------------------------------------------------------------------------------------------------------------------------*/
 /*                                                   ESTILOS DO CONTATO                                                         */
 /*------------------------------------------------------------------------------------------------------------------------------*/
@@ -257,7 +276,8 @@ h3 {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-content: space-between;
+    align-content: center;
+    margin-bottom: 50px;
 }
 
 /*----------------------------*/
@@ -268,36 +288,77 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 30px;
 }
 #contato h4 {
     justify-content: center;
 }
-#contato form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-}
-#contato form div {
+#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-#botao {
-    background-color: #9c4e5a;
+.form2 {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Indie Flower';
+    margin-bottom: 10px;
+}
+.caixinha {
+    border: 2px solid #7a3d46;
+    padding: 7px;
+    border-radius: 10px;
+    width: 75%;
+}
+.caixinha2 {
+    border: 2px solid #7a3d46;
+    padding: 7px;
+    border-radius: 10px;
+    width: 100%;
+}
+#botaozinho {
+    background-color: #7a3d46;
     border: none;
     color: white;
-    padding: 15px 32px;
+    font-family: 'Indie Flower';
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    margin: 4px 2px;
+    width: 40%;
     border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
 }
-#botao:hover {
+#botaozinho:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/*----------------------------*/
+/*           Ícones:          */
+/*----------------------------*/
+
+#idicones {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.iconescontato {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.iconescontato:hover {
     cursor: pointer;
     opacity: 0.5;
 }
@@ -310,7 +371,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 30px;
 }
 #endereco div {
     display: flex;
@@ -321,6 +381,7 @@ h3 {
 #endereco iframe {
     justify-content: center;
     align-content: center;
+    border-radius: 10px;
 }
 
 

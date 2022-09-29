@@ -1,41 +1,43 @@
-
+/*--------------------*/
+/*   VALIDAR O NOME   */ 
+/*--------------------*/
 const nome = document.querySelector('#nome')
-const email = document.querySelector('#email')
-const mensagem = document.querySelector('#mensagem')
-
 let nomeOk = false
-let emailOk = false
-let mensagemOk = false
-
-const mapa = document.querySelector('#mapa')
 
 function validaNome() {
   let txtNome = document.querySelector('#txtNome')
-
   if(nome.value.length < 3) {
-    txtNome.innerHTML = 'Nome inválido. Digite ao menos 3 caracteres.'
-    txtNome.style.color = '#EE2E31'
+    txtNome.innerHTML = 'Nome inválido'
+    txtNome.style.color = 'red'
     nomeOk = false
   } else {
-    txtNome.innerHTML = 'Nome válido.'
-    txtNome.style.color = '#4A314D'
+    txtNome.innerHTML = 'Nome válido'
+    txtNome.style.color = 'green'
     nomeOk = true
   }
 }
 
+/*---------------------*/
+/*   VALIDAR O EMAIL   */
+/*---------------------*/
+const email = document.querySelector('#email')
+let emailOk = false
+
 function validaEmail() {
   let txtEmail = document.querySelector('#txtEmail')
-
   if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
-    txtEmail.innerHTML = 'Email inválido.'
-    txtEmail.style.color = '#EE2E31'
+    txtEmail.innerHTML = 'Email inválido'
+    txtEmail.style.color = 'red'
     emailOk = false
   } else {
-    txtEmail.innerHTML = 'Email válido.'
-    txtEmail.style.color = '#4A314D'
+    txtEmail.innerHTML = 'Email válido'
+    txtEmail.style.color = 'green'
     emailOk = true
   }
 }
+
+/*----------------------------------------------------------*/
+/* Validação de e-mail utilizando expressão regular:
 
 function validaEmail2() {
   let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -50,35 +52,46 @@ function validaEmail2() {
     txtEmail.style.color = '#EE2E31'
     emailOk = false
   }
-}
+}*/
+/*----------------------------------------------------------*/
+/*   VALIDAR A CAIXA DE MENSAGEM   */
+/*---------------------------------*/
+const mensagem = document.querySelector('#mensagem')
+let mensagemOk = false
 
 function validaMensagem() {
   let txtMsg = document.querySelector('#txtMsg')
-
   if(mensagem.value.length >= 100) {
     txtMsg.innerHTML = 'Mensagem muito grande, digite no máximo 100 caracteres.'
-    txtMsg.style.color = '#EE2E31'
+    txtMsg.style.color = 'red'
     mensagemOk = false
   } else {
     txtMsg.innerHTML = mensagem.value.length + '/100'
-    txtMsg.style.color = '#4A314D'
+    txtMsg.style.color = 'green'
     mensagemOk = true
   }
 }
 
+/*---------------------*/
+/*   VALIDAR O ENVIO   */
+/*---------------------*/
 function enviarForm() {
   if(nomeOk === true && emailOk === true && mensagemOk === true) {
-    alert(nome.value + ', mensagem enviada com sucesso, aguarde um contato dos nossos zumbis por e-mail.')
+    alert(nome.value + ', sua mensagem foi enviada com sucesso :) ')
   } else {
-    alert('Por favor, preencha todos os campos corretamente. Nossos zumbis não são videntes e nem gostam de textão')
+    alert('Por favor, preencha todos os campos corretamente')
   }
 
 }
 
+/*--------------------*/
+/*   ESTILIZAR MAPA   */
+/*--------------------*/
 function mapaZoom() {
-  mapa.style.aspectRatio = '16/11'
+  mapa.style.width = '800px'
+  mapa.style.height = '600px'
 }
-
 function mapaNormal() {
-  mapa.style.aspectRatio = '16/9'
+  mapa.style.width = '400px'
+  mapa.style.height = '300px'
 }
